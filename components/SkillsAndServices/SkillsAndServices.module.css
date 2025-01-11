@@ -1,0 +1,7 @@
+.skills__list, .services__list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-self: start;
+  gap: 12px;
+}

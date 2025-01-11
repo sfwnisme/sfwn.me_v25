@@ -1,0 +1,34 @@
+.project {
+}
+.project__figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.project__image {
+  width: 100%;
+  height: auto;
+}
+.project__content {
+  /* padding: 24px; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 16px;
+}
+.project__title {
+  font-size: var(--font-h6);
+  line-height: var(--font-h6-line-height);
+  color: var(--color-light-gray);
+}
+.project__period {
+  font-size: var(--font-body);
+  line-height: var(--font-body-line-height);
+  color: var(--color-light-gray);
+  background-color: var(--color-gray);
+  padding: 3px 10px;
+  border-radius: 4px;
+}

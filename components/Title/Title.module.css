@@ -1,0 +1,18 @@
+.title-container {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 8px;
+  margin-bottom: 24px;
+}
+
+.title__arrow {
+  width: var(--font-body);
+  height: var(--font-body);
+}
+
+.title {
+  font-size: var(--font-body);
+  line-height: var(--font-body-line-height);
+  font-weight: 500;
+  color: var(--color-light-gray);
+}

@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+  height: 51px;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 16px 0px;
+}
+  
+}
+.nav__logo {
+  overflow-y: hidden;
+  display: flex;
+  height: 100%;
+}
+.nav__logo img {
+  height: var(--font-h4);
+}
+
+.nav__menu {
+  font-size: var(--font-body);
+  line-height: var(--font-body-line-height);
+  color: var(--color-light-gray);
+}

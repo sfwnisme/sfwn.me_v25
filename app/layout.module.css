@@ -1,0 +1,10 @@
+.layout {
+  padding-inline: 40px;
+  background-color: var(--color-black);
+}
+
+@media screen and (max-width: 768px) {
+  .layout {
+    padding-inline: 16px;
+  }
+}

@@ -1,0 +1,17 @@
+.clients {}
+
+.clients__list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  column-gap: 64px;
+}
+
+.client__item {}
+
+.client__img {
+  height: 48px;
+  /* height: 100px; */
+  object-fit: cover;
+  filter: grayscale(100%);
+}

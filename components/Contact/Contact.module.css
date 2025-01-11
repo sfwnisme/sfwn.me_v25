@@ -1,0 +1,12 @@
+.contact {}
+.contact__title {
+  font-size: var(--font-h1);
+  line-height: var(--font-h1-line-height);
+  color: var(--color-light-gray);
+  margin-bottom: 1rem;
+}
+.contact__email {
+  font-size: var(--font-h1);
+  line-height: var(--font-h1-line-height);
+  color: var(--color-gray);
+}

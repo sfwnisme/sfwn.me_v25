@@ -1,0 +1,6 @@
+.skill {
+  font-size: var(--font-h6);
+  line-height: var(--font-h6-line-height);
+  color: var(--color-light-gray);
+  font-weight: 400;
+}
