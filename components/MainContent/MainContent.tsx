@@ -14,7 +14,7 @@ const MainContent = () => {
       <Hero />
       <About />
       <SkillsAndServices />
-      <Clients />
+      {/* <Clients /> */}
       <Projects />
       <Contact />
       <Footer />
