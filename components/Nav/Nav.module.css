@@ -15,10 +15,17 @@
 .nav__logo {
   overflow-y: hidden;
   display: flex;
-  height: 100%;
+  align-items: center;
+  justify-content: center;
+  height: var(--font-h4);
+}
+@media (max-width: 767px) {
+  .nav__logo {
+    height: var(--font-h3);
+  }
 }
 .nav__logo img {
-  height: var(--font-h4);
+  height: 100%;
 }
 
 .nav__menu {
