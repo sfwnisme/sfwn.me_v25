@@ -5,6 +5,7 @@ import Title from '../Title/Title'
 import SectionWrapper from '../SectionWrapper/SectionWrapper'
 import PointTitle from '../PointTitle/PointTitle'
 import { motion } from 'motion/react'
+import LinkButton from '../Link/LinkButton'
 
 let id = 0
 
@@ -88,7 +89,8 @@ export default function About() {
           style={{ overflow: 'hidden' }}
         >
           <p className={Styles.brief__description}>
-            Hi there! I&apos;m Safwan Mohamed, a Frontend Developer residing in the vibrant city of Manchester, KSA. Fueled by a passion for crafting captivating digital experiences, I thrive on pushing the boundaries of frontend. By staying attuned to the ever-evolving landscape of trends and technologies, I deliver innovative solutions that not only surpass client expectations but also create unforgettable user journeys.
+            Hi there! I&apos;m Safwan Mohamed, a Frontend Developer residing in the vibrant city of Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences, I thrive on pushing the boundaries of frontend. By staying attuned to the ever-evolving landscape of trends and technologies, I deliver innovative solutions that not only surpass client expectations but also create unforgettable user journeys.
+          <p>Recently Create <LinkButton href='https://github.com/sfwnisme/visi'>VISI</LinkButton> npm package may it help you reduce the condition rendering in Reactjs</p>
           </p>
         </motion.div>
       </div>

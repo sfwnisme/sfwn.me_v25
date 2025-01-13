@@ -8,49 +8,77 @@ import { motion } from 'motion/react'
 type Props = {
   id: number,
   title: string,
-  period: string,
+  period?: string,
   image: string;
   href: string;
 }
 
-export default function Project({ id = 0, title = 'project title', period = '2024', image = '', href = "" }: Props) {
+export default function Project({ id = 0, title = 'project title', image = '', href = "" }: Props) {
   const imgVariants = {
     offscreen: {
-      scale: 1,
+      y: 100,
       opacity: 0.1,
-      filter: 'blur(10px)'
+      filter: 'grayscale(1)',
+      transition: {
+        duration: 0.5
+      }
     },
     onscreen: {
-      scale: 1.2,
+      y: 0,
       opacity: 1,
-      filter: 'blur(0px)',
+      filter: 'grayscale(0)',
       transition: {
         duration: 0.5
       }
     },
     hover: {
-      scale: 1.3,
+      scale: 0.9,
       opacity: 1,
-      filter: 'blur(0px)',
+      filter: 'grayscale(0)',
+      transition: {
+        duration: 0.1
+      }
     }
   }
 
+  // const projectVariants = {
+  //   offscreen: {
+  //     opacity: 0.1,
+  //   },
+  //   onscreen: {
+  //     opacity: 1,
+  //   }
+  // }
+
   return (
-    <Link href={href} className={Styles.project} id={id.toString()}>
-      <figure className={Styles.project__figure}>
-        <motion.img
-          src={image} alt="" className={Styles.project__image}
-          initial="offscreen"
-          whileHover='hover'
-          whileInView='onscreen'
-          variants={imgVariants}
-          viewport={{amount: 0, margin: '-400px'}}
-        />
-      </figure>
-      <div className={Styles.project__content}>
-        <PointTitle title={title} id={id} />
-        <p className={Styles.project__period}>{period}</p>
-      </div>
-    </Link>
+    <motion.div
+      // initial='offscreen'
+      // whileInView='onscreen'
+      // variants={projectVariants}
+      // viewport={{amount: 'some' }}
+      initial="offscreen"
+      // whileHover='hover'
+      whileInView='onscreen'
+      variants={imgVariants}
+      viewport={{ amount: 'some' }}
+    >
+      <Link href={href} className={Styles.project} id={id.toString()}
+      >
+        <figure className={Styles.project__figure}>
+          <motion.img
+            src={image} alt="" className={Styles.project__image}
+          // initial="offscreen"
+          // whileHover='hover'
+          // whileInView='onscreen'
+          // variants={imgVariants}
+          // viewport={{ amount: 'some' }}
+          />
+        </figure>
+        <div className={Styles.project__content}>
+          <PointTitle title={title} id={id} />
+          {/* <p className={Styles.project__period}>{period}</p> */}
+        </div>
+      </Link>
+    </motion.div>
   )
 }

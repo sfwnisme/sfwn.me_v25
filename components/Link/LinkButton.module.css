@@ -1,0 +1,34 @@
+.link {
+  background-color: transparent;
+  /* margin: 0px 10px; */
+  margin-right: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-self: center;
+  gap: 8px;
+  position: relative;
+  transition: 200ms linear;
+  width: fit-content;
+}
+.link:hover {
+  margin-right: 5px;
+  gap: 13px;
+  transition: 200ms linear;
+}
+
+.link::before {
+  content: "";
+  background-color: var(--color-orange);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.text {
+  color: var(--color-orange);
+  font-size: var(--font-body);
+  line-height: var(--font-body-line-height);
+}

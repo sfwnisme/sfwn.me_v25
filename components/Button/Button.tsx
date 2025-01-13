@@ -65,6 +65,7 @@ export default function Button({ children, ...rest }: Props) {
         variants={iconVariants}
         className={Styles.arrowContainer}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="./arrow-icon.svg" alt="" className={Styles.arrow} />
       </motion.div>
     </motion.button>

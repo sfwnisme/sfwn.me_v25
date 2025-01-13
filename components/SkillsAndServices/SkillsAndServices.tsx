@@ -5,18 +5,18 @@ import SectionWrapper from '../SectionWrapper/SectionWrapper'
 import Title from '../Title/Title'
 import PointTitle from '../PointTitle/PointTitle'
 
-import { motion, useScroll } from 'motion/react'
+import { motion } from 'motion/react'
 
 const skillsArray = [
   { id: 1, title: "HTML, CSS, JS, TS" },
-  { id: 2, title: "Node.js, React, Redux, Next.js" },
+  { id: 2, title: "Node.js, React, Next.js" },
   { id: 7, title: "Git, GitHub" },
 ]
 const servicesArray = [
   { id: 1, title: "Web Development" },
-  { id: 2, title: "Mobile Development" },
-  { id: 3, title: "API Development" },
-  { id: 4, title: "Database Development" },
+  { id: 2, title: "Wordpress Development" },
+  { id: 3, title: "Operation Management" },
+  { id: 4, title: "Marketing Management" },
 ]
 
 export const SkillsAndServices = () => {

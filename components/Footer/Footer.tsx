@@ -3,6 +3,9 @@ import Styles from './Footer.module.css'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+
+  // const 
+  
   return (
     <footer className={Styles.footer}>
       <span className={Styles.footer__year}>&copy;{currentYear}</span>

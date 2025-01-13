@@ -1,20 +1,8 @@
 import type { Metadata } from "next";
-// import { Inter_Tight } from "next/font/google";
 import { Inter_Tight } from "next/font/google";
-import { Inter } from "next/font/google"
 import "./globals.css";
 import Styles from "./layout.module.css"
 import Nav from "@/components/Nav/Nav";
-
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -22,10 +10,6 @@ const interTight = Inter_Tight({
   weight: '400',
 })
 
-const inter = Inter({
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export const metadata: Metadata = {
   title: "Sfwn",

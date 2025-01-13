@@ -16,8 +16,8 @@ export const Hero = () => {
   }
 
   const imageVariants = {
-    hidden: { opacity: 0, scale: 0.5 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
+    hidden: { opacity: 0, scale: 0.2, x: '-100%', filter: "blur(10px)" },
+    visible: { opacity: [0.5, 0.8, 1], filter: "grayscale(1)", scale: [1, 1], x: [-500, 0], transition: { duration: 1 } },
   }
 
   return (
@@ -25,7 +25,7 @@ export const Hero = () => {
       <SectionWrapper>
         <figure>
           <motion.img
-            src="/sfwn.jpg"
+            src="/sfwn-rectangular.png"
             alt="Safwan Mohamed"
             className={Styles.hero__image}
             variants={imageVariants}
