@@ -67,11 +67,6 @@ export default function Project({ id = 0, title = 'project title', image = '', h
         <figure className={Styles.project__figure}>
           <motion.img
             src={image} alt="" className={Styles.project__image}
-          // initial="offscreen"
-          // whileHover='hover'
-          // whileInView='onscreen'
-          // variants={imgVariants}
-          // viewport={{ amount: 'some' }}
           />
         </figure>
         <div className={Styles.project__content}>

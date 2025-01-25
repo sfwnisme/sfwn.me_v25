@@ -5,6 +5,8 @@ import Title from '../Title/Title'
 let id = 0
 
 const projectsArray = [
+  { id: id++, title: 'atwar', period: '2024', image: './projects/atwarco.co.gif', href: 'https://www.atwarco.co' },
+  { id: id++, title: 'beanbon', period: '2024', image: './projects/beanbon.com.png', href: 'https://www.beanbon.com' },
   { id: id++, title: 'technogass', period: '2024', image: './projects/www.technogass.com.png', href: 'https://www.technogass.com' },
   { id: id++, title: 'alamanarat', period: '2024', image: './projects/almanarat.sa.png', href: 'https://almanarat.sa' },
   { id: id++, title: 'cheveu', period: '2024', image: './projects/cheveusolutions.com.png', href: 'https://cheveusolutions.com' },
