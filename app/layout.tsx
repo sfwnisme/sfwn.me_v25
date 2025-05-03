@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Styles from "./layout.module.css";
-import Nav from "@/components/Nav/Nav";
+// import Nav from "@/components/Nav/Nav";
 
 const interTight = Inter_Tight({
   subsets: ["latin"],
@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${interTight.className} ${Styles.layout}`}>
-        <Nav />
+        {/* <Nav /> */}
         {children}
       </body>
     </html>

@@ -9,4 +9,7 @@
   font-size: var(--font-h1);
   line-height: var(--font-h1-line-height);
   color: var(--color-gray);
+  @media (max-width: 600px) {
+    font-size: var(--font-h3);
+  }
 }
