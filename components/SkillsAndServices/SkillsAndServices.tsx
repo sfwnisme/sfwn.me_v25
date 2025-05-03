@@ -9,8 +9,8 @@ import { motion } from 'motion/react'
 
 const skillsArray = [
   { id: 1, title: "HTML, CSS, JS, TS" },
-  { id: 2, title: "Node.js, React, Next.js" },
-  { id: 7, title: "Git, GitHub" },
+  { id: 2, title: "Nodejs, React, Next.js, Expressjs, MongoDB" },
+  { id: 7, title: "Git, GitHub, Mongoose, Prisma" },
 ]
 const servicesArray = [
   { id: 1, title: "Web Development" },

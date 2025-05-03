@@ -10,6 +10,7 @@ import LinkButton from '../Link/LinkButton'
 let id = 0
 
 const experiencesArray = [
+  { id: id++, title: 'Web Developer / Freelance', period: '2024 - Now' },
   { id: id++, title: 'Operation Specialist / Makzanelc', period: '2024 - Now' },
   { id: id++, title: 'Operation Specialist / Planandresults', period: '2023 - Now' },
   { id: id++, title: 'Marketing Specialist / Technogas', period: '2024 - 2024' },

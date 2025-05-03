@@ -1,0 +1,141 @@
+{
+  "info": {
+    "name": "Safwan Mohamed",
+    "role": "Frontend"
+  },
+  "experiences": [
+    {
+      "id": 1,
+      "title": "Operation Specialist / Makzanelc",
+      "period": "2024 - Now"
+    },
+    {
+      "id": 2,
+      "title": "Operation Specialist / Planandresults",
+      "period": "2023 - Now"
+    },
+    {
+      "id": 3,
+      "title": "Marketing Specialist / Technogas",
+      "period": "2024 - 2024"
+    },
+    {
+      "id": 4,
+      "title": "Online Marketing Specialist / Elbity",
+      "period": "2021 - 2023"
+    },
+    {
+      "id": 5,
+      "title": "Online Store Owner / Yemen Drop",
+      "period": "2018 - 2022"
+    }
+  ],
+  "brief": {
+    "description": "Hi there! I am Safwan Mohamed, a Frontend Developer residing in the vibrant city of Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences, I thrive on pushing the boundaries of frontend. By staying attuned to the ever-evolving landscape of trends and technologies, I deliver innovative solutions that not only surpass client expectations but also create unforgettable user journeys.",
+    "note": "Recently, I created the <LinkButton href='https://github.com/sfwnisme/visi'>VISI</LinkButton> npm package. It may help you simplify conditional rendering in React.js."
+  },
+  "skills": [
+    {
+      "id": 1,
+      "title": "HTML, CSS, JS, TS"
+    },
+    {
+      "id": 2,
+      "title": "Node.js, React, Next.js"
+    },
+    {
+      "id": 7,
+      "title": "Git, GitHub"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Development"
+    },
+    {
+      "id": 2,
+      "title": "Wordpress Development"
+    },
+    {
+      "id": 3,
+      "title": "Operation Management"
+    },
+    {
+      "id": 4,
+      "title": "Marketing Management"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "atwar",
+      "period": "2024",
+      "image": "./projects/atwarco.co.gif",
+      "href": "https://www.atwarco.co"
+    },
+    {
+      "id": 2,
+      "title": "beanbon",
+      "period": "2024",
+      "image": "./projects/beanbon.com.png",
+      "href": "https://www.beanbon.com"
+    },
+    {
+      "id": 3,
+      "title": "technogass",
+      "period": "2024",
+      "image": "./projects/www.technogass.com.png",
+      "href": "https://www.technogass.com"
+    },
+    {
+      "id": 4,
+      "title": "alamanarat",
+      "period": "2024",
+      "image": "./projects/almanarat.sa.png",
+      "href": "https://almanarat.sa"
+    },
+    {
+      "id": 5,
+      "title": "cheveu",
+      "period": "2024",
+      "image": "./projects/cheveusolutions.com.png",
+      "href": "https://cheveusolutions.com"
+    },
+    {
+      "id": 6,
+      "title": "4C's",
+      "period": "2024",
+      "image": "./projects/jewelry4c.com.png",
+      "href": "https://jewelry4c.com"
+    },
+    {
+      "id": 7,
+      "title": "makzan elctra",
+      "period": "2024",
+      "image": "./projects/makzanelc.com.png",
+      "href": "https://makzanelc.com"
+    },
+    {
+      "id": 8,
+      "title": "mieivc",
+      "period": "2024",
+      "image": "./projects/mieivcksa.com.png",
+      "href": "https://mieivcksa.com"
+    },
+    {
+      "id": 9,
+      "title": "milllime",
+      "period": "2024",
+      "image": "./projects/milllime.com.png",
+      "href": "https://milllime.com"
+    },
+    {
+      "id": 10,
+      "title": "plan and results",
+      "period": "2024",
+      "image": "./projects/planandresults.vercel.app.png",
+      "href": "https://planandresults.vercel.app"
+    }
+  ]
+}
