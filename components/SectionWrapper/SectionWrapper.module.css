@@ -3,9 +3,10 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 24px;
   row-gap: 40px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   width: 100%;
   overflow: hidden;
+  border-bottom: 1px dashed #c8d3cc60
 }
 
 @media screen and (max-width: 768px) {

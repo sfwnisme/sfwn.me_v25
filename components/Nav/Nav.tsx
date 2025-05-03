@@ -14,9 +14,10 @@ export default function Nav() {
 
   return (
     <nav className={Styles.nav}>
-      <figure className={Styles.nav__logo}>
+      {/* <figure className={Styles.nav__logo}>
         <motion.img variants={logoVariants} initial="hidden" animate="visible" src="/sfwn-logo-white.png" alt="" />
-      </figure>
+      </figure> */}
+      <div></div>
       <motion.div variants={logoVariants} initial="hidden" animate="visible" transition={{ delay: 0.1 }} className={Styles.nav__buttons}>
         <Button onClick={() => router.push('https://docs.google.com/document/d/1uSzOK67JPBiA6Y_7me9PFl3eLYMgJ4d9af-Oi6GlbWc/edit?tab=t.0#heading=h.yieyffp1owqb')}>
           CV
