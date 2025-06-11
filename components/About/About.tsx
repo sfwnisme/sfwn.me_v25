@@ -35,21 +35,6 @@ export default function About() {
     }
   }
 
-  // const titleVariant = {
-  //   initial: {
-  //     x: '-100%',
-  //     opacity: 0
-  //   },
-  //   animate: (custom: number) => ({
-  //     x: 0,
-  //     opacity: 1,
-  //     transition: {
-  //       duration: 0.5 * custom,
-  //       ease: 'easeOut',
-  //       delay: 0.2 * custom,
-  //     }
-  //   })
-  // }
   const titleVariant = {
     initial: {
       x: '-100%',

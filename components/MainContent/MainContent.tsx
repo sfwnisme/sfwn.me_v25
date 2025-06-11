@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { Hero } from '../Hero/Hero'
 import Styles from './MainContent.module.css'
@@ -7,6 +8,8 @@ import About from '../About/About'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import { SkillsAndServices } from '../SkillsAndServices/SkillsAndServices'
+import Workspace from '../workspace/Workspace'
+// import Projects from '../Projects/Projects'
 
 const MainContent = () => {
   return (
@@ -14,6 +17,7 @@ const MainContent = () => {
       <Hero />
       <About />
       <SkillsAndServices />
+      <Workspace />
       {/* <Clients /> */}
       {/* <Projects /> */}
       <Contact />
