@@ -26,8 +26,8 @@ export default async function Workspace() {
     </div>
   )
 }
-/**
- *  id: 895813340,
+/*
+  id: 895813340,
   node_id: 'R_kgDONWUG3A',
   name: 'visi',
   full_name: 'sfwnisme/visi',
