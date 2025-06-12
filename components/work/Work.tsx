@@ -1,10 +1,9 @@
 'use client'
 import Style from './Work.module.css'
-import { Book, FolderGit, GitCommit, GitCommitVertical, GitPullRequest, GitPullRequestArrow, Star, Timer, Upload } from 'lucide-react'
+import { Book, FolderGit, GitCommit, GitCommitVertical, Star } from 'lucide-react'
 import { M_PLUS_1_Code } from 'next/font/google';
 import React from 'react'
 import LinkButton from '../Link/LinkButton';
-import Button from '../Button/Button';
 import { formatedDate } from '@/utils/utils';
 const font = M_PLUS_1_Code({
   subsets: ["latin"],

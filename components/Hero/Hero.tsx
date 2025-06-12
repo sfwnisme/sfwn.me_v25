@@ -3,13 +3,6 @@ import React from "react";
 import Styles from "./Hero.module.css";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import { motion } from "motion/react";
-import { Abril_Fatface, Archivo, Cutive, Indie_Flower, VT323 } from "next/font/google";
-
-// const font = Cutive({
-//   subsets: ["latin"],
-//   display: "swap",
-//   weight: "400",
-// });
 
 export const Hero = () => {
   const nameVariants = {
