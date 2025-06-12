@@ -90,11 +90,10 @@ export default function About() {
           style={{ overflow: 'hidden' }}
         >
           <p className={Styles.brief__description}>
-            Hi there! I&apos;m Safwan Mohamed, a Frontend Developer residing in the vibrant city of Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences, I thrive on pushing the boundaries of frontend. By staying attuned to the ever-evolving landscape of trends and technologies, I deliver innovative solutions that not only surpass client expectations but also create unforgettable user journeys.
-            {/* <p style={{paddingTop: '1rem'}}>* Recently I created <LinkButton href='https://github.com/sfwnisme/visi'>VISI</LinkButton> npm package may it helps you reducing the confused condition rendering in Reactjs</p> */}
+            Hi there! I&apos;m Safwan Mohamed, a Frontend Developer residing in Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences. I thrive on pushing the boundaries of frontend, By staying attuned to the ever-evolving landscape of trends and technologies.
             <br />
             <br />
-            <q>Recently, I created the <LinkButton href='https://github.com/sfwnisme/visi'>VISI</LinkButton> npm package. It may help you simplify conditional rendering in React.js.</q>
+            <q className={Styles.brief__quote}>Recently, I created the <LinkButton href='https://github.com/sfwnisme/visi'>VISI</LinkButton> npm package. It may help you simplify conditional rendering in React.js.</q>
           </p>
         </motion.div>
       </div>

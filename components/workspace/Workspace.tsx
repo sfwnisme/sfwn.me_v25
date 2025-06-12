@@ -12,11 +12,11 @@ export default async function Workspace() {
   const luberefDotComCloneRepo = await getRepo('luberef.com-clone')
   const schoolManagementSystemeRepo = await getRepo('school-management-system')
   const eCommerceRepo = await getRepo('e-commerce')
-
+console.log(complaintTicketsRepo)
   return (
     <div className={Style.workspace}>
       {/* {String(visiRepo?.url)} */}
-      <Title>Worspace</Title>
+      <Title>Workspace</Title>
       <div className={Style['workspace__works']}>
         <Work repo={visiRepo} />
         <Work repo={complaintTicketsRepo} />

@@ -3,6 +3,13 @@ import React from "react";
 import Styles from "./Hero.module.css";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import { motion } from "motion/react";
+import { Abril_Fatface, Archivo, Cutive, Indie_Flower, VT323 } from "next/font/google";
+
+// const font = Cutive({
+//   subsets: ["latin"],
+//   display: "swap",
+//   weight: "400",
+// });
 
 export const Hero = () => {
   const nameVariants = {
@@ -53,7 +60,7 @@ export const Hero = () => {
             Frontend Developer
           </motion.h2>
           <motion.h1
-            className={Styles.hero__name}
+            className={`${Styles.hero__name}`}
             initial="hidden"
             animate="visible"
             variants={nameVariants}

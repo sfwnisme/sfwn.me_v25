@@ -34,3 +34,8 @@
   line-height: var(--font-h6-line-height);
   color: var(--color-light-gray);
 }
+
+.brief__quote {
+  font-size: 14px;
+  line-height: var(--font-h6-line-height);
+}
