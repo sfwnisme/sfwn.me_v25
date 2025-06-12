@@ -12,10 +12,8 @@ export default async function Workspace() {
   const luberefDotComCloneRepo = await getRepo('luberef.com-clone')
   const schoolManagementSystemeRepo = await getRepo('school-management-system')
   const eCommerceRepo = await getRepo('e-commerce')
-console.log(complaintTicketsRepo)
   return (
     <div className={Style.workspace}>
-      {/* {String(visiRepo?.url)} */}
       <Title>Workspace</Title>
       <div className={Style['workspace__works']}>
         <Work repo={visiRepo} />
@@ -25,7 +23,6 @@ console.log(complaintTicketsRepo)
         <Work repo={schoolManagementSystemeRepo} />
         <Work repo={eCommerceRepo} />
       </div>
-      {/* <Work repo={{...visiRepo,commits: commits}}/> */}
     </div>
   )
 }

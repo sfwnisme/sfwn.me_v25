@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 export default function NotFoundPage() {
 
   const router = useRouter()
-  console.log(router)
 
   return (
     <div className={Style['not-found']}>
