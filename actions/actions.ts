@@ -1,6 +1,6 @@
 'use server'
 
-const TOKEN = process.env.NEXT_GITHUB_TOKEN
+const TOKEN = process.env.NEXT_PUBLIC_GITHUB_TOKEN
 export async function getRepo(repoName: string) {
   const BASE_URL = `https://api.github.com/repos/sfwnisme/${repoName ?? 'visi'}`
   try {
