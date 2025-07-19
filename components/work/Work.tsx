@@ -5,6 +5,7 @@ import React from 'react'
 import LinkButton from '../Link/LinkButton';
 import { formatedDate } from '@/utils/utils';
 import { motion } from 'motion/react'
+import { M_PLUS_1_Code } from 'next/font/google';
 
 type Repo = {
   id: number,
@@ -20,6 +21,11 @@ type Repo = {
 type Props = {
   repo: Repo
 }
+
+const font = M_PLUS_1_Code({
+  subsets: ['latin'],
+  weight: ['400'],
+})
 
 const titleVariant = {
   offscreen: {
@@ -38,7 +44,7 @@ const titleVariant = {
 }
 export default function Work({ repo }: Readonly<Props>) {
   return (
-    <div className={Style.work}>
+    <div className={`${Style.work} ${font.className}`}>
       <motion.div
         custom={1}
         initial="offscreen"
