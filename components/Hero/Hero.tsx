@@ -34,22 +34,22 @@ export const Hero = () => {
   return (
     <div className={Styles.hero}>
       <SectionWrapper>
-        <figure>
-          <motion.div
+        {/* <figure> */}
+        <motion.figure
+          className={Styles.hero__image}
+          variants={imageVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <Image
+            src="/sfwn-rectangular.png"
+            alt="Safwan Mohamed"
             className={Styles.hero__image}
-            variants={imageVariants}
-            initial="hidden"
-            animate="visible"
-          >
-            <Image
-              src="/sfwn-rectangular.png"
-              alt="Safwan Mohamed"
-              className={Styles.hero__image}
-              width={100}
-              height={100}
-            />
-          </motion.div>
-        </figure>
+            width={1000}
+            height={150}
+          />
+        </motion.figure>
+        {/* </figure> */}
         <div className={Styles.hero__content}>
           <motion.h2
             className={Styles.hero__title}
