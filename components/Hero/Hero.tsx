@@ -3,6 +3,7 @@ import React from "react";
 import Styles from "./Hero.module.css";
 import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import { motion } from "motion/react";
+import Image from "next/image";
 
 export const Hero = () => {
   const nameVariants = {
@@ -34,14 +35,20 @@ export const Hero = () => {
     <div className={Styles.hero}>
       <SectionWrapper>
         <figure>
-          <motion.img
-            src="/sfwn-rectangular.png"
-            alt="Safwan Mohamed"
+          <motion.div
             className={Styles.hero__image}
             variants={imageVariants}
             initial="hidden"
             animate="visible"
-          />
+          >
+            <Image
+              src="/sfwn-rectangular.png"
+              alt="Safwan Mohamed"
+              className={Styles.hero__image}
+              width={100}
+              height={100}
+            />
+          </motion.div>
         </figure>
         <div className={Styles.hero__content}>
           <motion.h2

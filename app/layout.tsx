@@ -7,7 +7,8 @@ import Styles from "./layout.module.css";
 const interTight = Inter_Tight({
   subsets: ["latin"],
   display: "swap",
-  weight: "400",
+  weight: ["400"],
+  variable: "--font-inter-tight",
 });
 
 export const metadata: Metadata = {
