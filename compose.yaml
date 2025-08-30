@@ -1,0 +1,21 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    develop:
+      watch: 
+        - path: ./package.json
+          action: rebuild
+        - path: ./next.config.ts
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+        - path: .
+          target: /app
+          action: sync
+    environment:
+      # NODE_ENV: production
+      NEXT_PUBLIC_GITHUB_TOKEN: ${NEXT_PUBLIC_GITHUB_TOKEN}
