@@ -10,7 +10,7 @@ import LinkButton from '../Link/LinkButton'
 let id = 0
 
 const experiencesArray = [
-  { id: id++, title: 'Web Developer / Freelance', period: '2024 - Now' },
+  { id: id++, title: 'Web Developer and TMarketing / Self Employed', period: '2024 - Now' },
   { id: id++, title: 'Operation Specialist / Makzanelc', period: '2024 - Now' },
   { id: id++, title: 'Operation Specialist / Planandresults', period: '2023 - Now' },
   { id: id++, title: 'Marketing Specialist / Technogas', period: '2024 - 2024' },
@@ -93,7 +93,7 @@ export default function About() {
             Hi there! I&apos;m Safwan Mohamed, a Frontend Developer residing in Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences. I thrive on pushing the boundaries of frontend, By staying attuned to the ever-evolving landscape of trends and technologies.
             <br />
             <br />
-            <q className={Styles.brief__quote}>Recently, I created the <LinkButton href='https://github.com/sfwnisme/visi'>VISI</LinkButton> npm package. It may help you simplify conditional rendering in React.js.</q>
+            <q className={Styles.brief__quote}>Recently, I created the <LinkButton href='https://github.com/sfwnisme/visi' variant='default'>VISI</LinkButton> npm package. It may help you simplify conditional rendering in React.js.</q>
           </p>
         </motion.div>
       </div>

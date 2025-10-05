@@ -6,7 +6,7 @@
   padding-bottom: 40px;
   width: 100%;
   overflow: hidden;
-  border-bottom: 1px dashed #c8d3cc60
+  border-bottom: 1px dashed var(--color-gray)
 }
 
 @media screen and (max-width: 768px) {

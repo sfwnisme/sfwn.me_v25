@@ -26,7 +26,7 @@ export default function Projects() {
   return (
     <div>
       <Title>Projects</Title>
-      <SectionWrapper>
+      <SectionWrapper> 
         {renderProjects}
       </SectionWrapper>
     </div>
