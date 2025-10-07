@@ -1,0 +1,13 @@
+.loading {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-black) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading__text {
+  color: var(--color-orange);
+  font-weight: 100;
+}

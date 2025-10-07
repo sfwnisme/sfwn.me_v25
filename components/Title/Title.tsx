@@ -40,7 +40,7 @@ export default function Title({ children }: Props) {
   return (
     <div className={Styles['title-container']} style={{ overflow: 'hidden' }}>
       <motion.img
-        src='./title-arrow.svg' alt="" className={Styles.title__arrow}
+        src='./title-arrow2.svg' alt="" className={Styles.title__arrow}
         variants={arrowVariants}
         initial="initial"
         animate="animate"

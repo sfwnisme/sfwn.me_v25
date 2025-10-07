@@ -16,6 +16,7 @@
 
 .footer__socials {
   display: flex;
+  align-items: center;
   gap: 16px;
   /* width: 100%; */
 }

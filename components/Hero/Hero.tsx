@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Styles from "./Hero.module.css";
-import SectionWrapper from "../SectionWrapper/SectionWrapper";
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -24,7 +23,7 @@ export const Hero = () => {
     hidden: { opacity: 0, scale: 0.2, x: "-100%" },
     visible: {
       opacity: [0.5, 0.8, 1],
-      filter: "grayscale(1)",
+      // filter: "grayscale(1)",
       scale: [1, 1],
       x: [-500, 0],
       transition: { duration: 1 },
@@ -33,20 +32,20 @@ export const Hero = () => {
 
   return (
     <div className={Styles.hero}>
-      <SectionWrapper>
+      {/* <SectionWrapper> */}
         {/* <figure> */}
         <motion.figure
-          className={Styles.hero__image}
+          className={Styles.hero__figure}
           variants={imageVariants}
           initial="hidden"
           animate="visible"
         >
           <Image
-            src="/sfwn-rectangular.png"
+            src="/sfwn-orange-rounded-20.webp"
             alt="Safwan Mohamed"
             className={Styles.hero__image}
-            width={1000}
-            height={150}
+            width={2000}
+            height={2000}
           />
         </motion.figure>
         {/* </figure> */}
@@ -68,7 +67,7 @@ export const Hero = () => {
             Safwan Mohamed
           </motion.h1>
         </div>
-      </SectionWrapper>
+      {/* </SectionWrapper> */}
     </div>
   );
 };
