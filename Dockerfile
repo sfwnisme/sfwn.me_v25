@@ -1,9 +1,11 @@
-FROM node:22.18.0-alpine
+ARG NODE_VERSION=22.18.0
+ARG EXPOSE_PORT=3000
+
+FROM node:${NODE_VERSION}-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 3000
-RUN npm run build
-EXPOSE 3000
-CMD npm run dev
+EXPOSE ${EXPOSE_PORT}
+CMD ["npm", "run", "dev"]
+
