@@ -9,7 +9,13 @@
   width: var(--font-body);
   height: var(--font-body);
 }
+:lang(ar) .title__arrow {
+  transform: scaleX(-1) !important;
+}
 
+:lang(ar) :dir(ltr) .title__arrow {
+  transform: scaleX(100) !important;
+}
 .title {
   font-size: var(--font-body);
   line-height: var(--font-body-line-height);

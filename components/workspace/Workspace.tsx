@@ -3,9 +3,11 @@ import Work from '../work/Work'
 import { getRepo } from '@/actions/actions'
 import Style from './Workspace.module.css'
 import Title from '../Title/Title'
+import { getDictionary } from '@/app/[lang]/dictionaries'
 
-export default async function Workspace() {
-
+export default async function Workspace({lang}: {lang: "en" | "ar"}) {
+  // const {workspace, titles} = lan
+  const title = (await getDictionary(lang)).titles.wordspace
   const visiRepo = await getRepo('visi')
   const complaintTicketsRepo = await getRepo('COMPLAINT-TICKETS')
   const backendTicketSystemRepo = await getRepo('backend-ticket-system')
@@ -14,7 +16,7 @@ export default async function Workspace() {
   const eCommerceRepo = await getRepo('e-commerce')
   return (
     <div className={Style.workspace}>
-      <Title>Workspace</Title>
+      <Title>{title}</Title>
       <div className={Style['workspace__works']}>
         <Work repo={visiRepo} />
         <Work repo={complaintTicketsRepo} />

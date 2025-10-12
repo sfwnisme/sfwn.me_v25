@@ -1,0 +1,37 @@
+.job_title__title {
+  font-size: var(--font-h6);
+  line-height: var(--font-h6-line-height);
+  color: var(--color-light-gray);
+  font-weight: 400;
+}
+.job_title__period {
+  display: block;
+  font-size: 14px;
+  line-height: var(--font-body-line-height);
+  color: var(--color-gray);
+}
+.job_title__nest__item__period{
+  display: block;
+  font-size: 13px;
+  line-height: var(--font-body-line-height);
+  color: var(--color-gray);
+}
+.job_title__nest{
+  padding-inline-start: 0px;
+  padding: 4;
+  display: grid;
+  * {
+    font-weight: 300 !important;
+  }
+}
+.job_title__nest__item{
+  padding-inline-start: 0px;
+  padding: 4;
+  color: var(--color-light-gray);
+  font-weight: 200;
+  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+
+}

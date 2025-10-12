@@ -4,12 +4,13 @@ import Styles from './Button.module.css'
 import { motion, MotionProps } from "motion/react"
 type Props = {
   children: React.ReactNode;
+  icon?: "visible" | "invisible",
 } & ButtonType & MotionProps
 
 type ButtonType = React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
 
-export default function Button({ children, ...rest }: Props) {
+export default function Button({ children, icon = "visible", ...rest }: Props) {
   const buttonVariants = {
     initial: {
       scale: 0.3,
@@ -66,7 +67,7 @@ export default function Button({ children, ...rest }: Props) {
         className={Styles.arrowContainer}
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="./arrow-icon.svg" alt="" className={Styles.arrow} />
+        {icon === "visible" && <img src="./arrow-icon.svg" alt="" className={Styles.arrow} />}
       </motion.div>
     </motion.button>
   )

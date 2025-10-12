@@ -16,6 +16,11 @@
     height: auto;
   }
 }
+.hero__control_buttons {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+}
 
 .hero__figure {
   width: 100%;
@@ -27,6 +32,9 @@
   display: flex;
   align-items: end;
   justify-content: end;
+}
+:lang(ar) .hero__image {
+  transform: scaleX(-1);
 }
 
 .hero__image {
@@ -48,7 +56,7 @@
 .hero__name {
   font-size: var(--font-h1);
   line-height: var(--font-h1-line-height);
-  font-weight: 100 !important;
+  font-weight: 400 !important;
   color: var(--color-light-gray);
   max-width: 500px;
 }

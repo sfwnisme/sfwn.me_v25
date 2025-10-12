@@ -14,12 +14,38 @@
   --font-h6: 24px;
   --font-body: 16px;
   /* line height */
-  --font-h1-line-height: 100%;
+  --font-h1-line-height: 100%; /*100%*/
   --font-h2-line-height: 110%;
   --font-h3-line-height: 110%;
   --font-h4-line-height: 120%;
   --font-h5-line-height: 120%;
   --font-h6-line-height: 140%;
+  --font-body-line-height: 140%;
+  /* fonts weights */
+  --font-h1-weight: 500;
+  --font-h2-weight: 500;
+  --font-h3-weight: 500;
+  --font-h4-weight: 500;
+  --font-h5-weight: 500;
+  --font-h6-weight: 500;
+  --font-body-weight: 500;
+}
+:lang(ar) {
+  /* fonts */
+  --font-h1: 100px;
+  --font-h2: 90px;
+  --font-h3: 66px;
+  --font-h4: 44px;
+  --font-h5: 32px;
+  --font-h6: 24px;
+  --font-body: 16px;
+  /* line height */
+  --font-h1-line-height: 150%; /*100%*/
+  --font-h2-line-height: 110%;
+  --font-h3-line-height: 110%;
+  --font-h4-line-height: 120%;
+  --font-h5-line-height: 120%;
+  --font-h6-line-height: 160%;
   --font-body-line-height: 140%;
   /* fonts weights */
   --font-h1-weight: 500;
@@ -49,10 +75,30 @@
     --font-h6: 20px;
     --font-body: 16px;
   }
+  :lang(ar) {
+    /* fonts */
+    --font-h1: 64px;
+    --font-h2: 90px;
+    --font-h3: 66px;
+    --font-h4: 44px;
+    --font-h5: 32px;
+    --font-h6: 20px;
+    --font-body: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   :root {
+    /* fonts */
+    --font-h1: 48px;
+    --font-h2: 36px;
+    --font-h3: 24px;
+    --font-h4: 20px;
+    --font-h5: 18px;
+    --font-h6: 20px;
+    --font-body: 14px;
+  }
+  :lang(ar) {
     /* fonts */
     --font-h1: 48px;
     --font-h2: 36px;
@@ -102,4 +148,7 @@ li {
 figure {
   padding: 0;
   margin: 0;
+}
+button {
+  font-family: var(--font-main);
 }

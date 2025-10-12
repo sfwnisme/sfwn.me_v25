@@ -10,4 +10,5 @@
 .loading__text {
   color: var(--color-orange);
   font-weight: 100;
+  text-align: center;
 }

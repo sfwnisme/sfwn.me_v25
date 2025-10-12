@@ -5,6 +5,7 @@ import React from 'react'
 import LinkButton from '../Link/LinkButton';
 import { formatedDate } from '@/utils/utils';
 import { motion } from 'motion/react'
+import { useDictionary } from '@/context/DictionaryProvider';
 
 type Repo = {
   id: number,
@@ -37,6 +38,9 @@ const titleVariant = {
   })
 }
 export default function Work({ repo }: Readonly<Props>) {
+
+  const {buttons_and_links}= useDictionary()
+  console.log("//////////////////",buttons_and_links)
   return (
     <div className={Style.work}>
       <motion.div
@@ -66,18 +70,13 @@ export default function Work({ repo }: Readonly<Props>) {
         style={{ overflow: 'hidden' }}
         className={Style['wrok__footer']}>
         <span className={Style['work__lang']} title='language used'>{repo?.language}</span>
-        <span className={Style['work__stars']} title='github stars'><Star size={13} color='var(--color-light-gray)' /> {repo.stargazers_count}</span>
-        <span className={Style['work__commits']} title='github commits number'><GitCommit size={18} color='var(--color-light-gray)' /> {repo.commits}</span>
-        <span className={Style['work__date']} title='first push'><FolderGit size={18} color='var(--color-light-gray)' /> {formatedDate(repo.created_at)}</span>
-        <span className={Style['work__date']} title='last push'><GitCommitVertical size={18} color='var(--color-light-gray)' /> {formatedDate(repo.updated_at)}</span>
-        <LinkButton href={repo.html_url} variant="default">Open repo</LinkButton>
-        <LinkButton href={repo.html_url} variant="default">Demo</LinkButton>
+        <span className={Style['work__stars']} title='github stars'><Star size={13} color='var(--color-gray)' /> {repo.stargazers_count}</span>
+        <span className={Style['work__commits']} title='github commits number'><GitCommit size={18} color='var(--color-gray)' /> {repo.commits}</span>
+        <span className={Style['work__date']} title='first push'><FolderGit size={18} color='var(--color-gray)' /> {formatedDate(repo.created_at)}</span>
+        <span className={Style['work__date']} title='last push'><GitCommitVertical size={18} color='var(--color-gray)' /> {formatedDate(repo.updated_at)}</span>
+        <LinkButton href={repo.html_url} variant="default">{buttons_and_links.open}</LinkButton>
+        <LinkButton href={repo.html_url} variant="default">{buttons_and_links.demo}</LinkButton>
       </motion.div>
-      {/* <br/>
-      <div className={Style['wrok__footer']}>
-        <LinkButton href={repo.html_url} variant="default">Open repo</LinkButton>
-        <LinkButton href={repo.html_url} variant="default">Demo</LinkButton>
-      </div> */}
     </div>
   )
 }

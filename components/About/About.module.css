@@ -5,15 +5,11 @@
   color: white;
 }
 
-.experiences {}
-
 .experiences__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-
-.experiences__item {}
 
 .experience__title {
   font-size: var(--font-h6);
@@ -28,7 +24,15 @@
   color: var(--color-gray);
   margin-top: 8px;
 }
-
+.experience__nested {
+  padding-block: 1rem;
+}
+.experience__nested__item {
+  color: var(--color-gray);
+  font-size: 16px;
+  padding-inline-start: 1rem;
+  padding: 4px;
+}
 .brief__description {
   font-size: var(--font-h6);
   line-height: var(--font-h6-line-height);

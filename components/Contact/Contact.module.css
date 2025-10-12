@@ -9,7 +9,16 @@
   font-size: var(--font-h1);
   line-height: var(--font-h1-line-height);
   color: var(--color-gray);
+  @media (max-width: 1200px) {
+    font-size: var(--font-h3);
+  }
   @media (max-width: 600px) {
+    font-size: var(--font-h3);
+  }
+}
+:lang(ar) .contact__email {
+  font-size: var(--font-h2);
+  @media (max-width: 1200px) {
     font-size: var(--font-h3);
   }
 }

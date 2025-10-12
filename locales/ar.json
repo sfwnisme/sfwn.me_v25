@@ -1,0 +1,139 @@
+{
+  "user": {
+    "first_name": "صفوان",
+    "second_name": "محمــــــد",
+    "job_title": "مطور واجهات أمامية",
+    "brief": "مرحباً! أنا صفوان محمد، مطور واجهات أمامية أعيش في جدة، المملكة العربية السعودية. مدفوع بشغف لصناعة تجارب رقمية مميزة، وأسعى دائماً لتجاوز حدود تطوير الواجهات الأمامية من خلال مواكبة أحدث الاتجاهات والتقنيات."
+  },
+  "experience": [
+    {
+      "title": "مطور مواقع وتسويق تقني",
+      "employer": "عمل حر",
+      "period": "2021 - الآن",
+      "nested": [
+        {
+          "title": "مطور واجهات أمامية",
+          "period": "2023 - الآن"
+        },
+        {
+          "title": "مطور ووردبريس",
+          "period": "2024 - الآن"
+        },
+        {
+          "title": "أخصائي تسويق تقني",
+          "period": "2021 - الآن"
+        }
+      ]
+    },
+    {
+      "title": "مدير تسويق",
+      "employer": "Makzanelc",
+      "period": "مارس 2024 - سبتمبر 2025",
+      "type": "دوام كامل"
+    },
+    {
+      "title": "أخصائي تسويق",
+      "employer": "Technogas",
+      "period": "يوليو 2024 - نوفمبر 2024",
+      "type": "دوام جزئي"
+    },
+    {
+      "title": "أخصائي عمليات",
+      "employer": "Planandresults",
+      "period": "فبراير 2023 - مارس 2024",
+      "type": "دوام كامل"
+    },
+    {
+      "title": "أخصائي تسويق",
+      "employer": "Elbity",
+      "period": "أغسطس 2021 - فبراير 2023",
+      "type": "دوام كامل"
+    },
+    {
+      "title": "مالك متجر إلكتروني",
+      "employer": "Yemen Drop",
+      "period": "مارس 2019 - فبراير 2022",
+      "type": "دوام كامل"
+    }
+  ],
+  "services": [
+    "تطوير الويب",
+    "تطوير ووردبريس",
+    "التسويق التقني",
+    "إدارة العمليات"
+  ],
+  "skills": {
+    "main": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "frameworks": [
+      "Nodejs",
+      "Reactjs",
+      "Nextjs",
+      "Expressjs",
+      "MongoDB"
+    ],
+    "tools": [
+      "Docker",
+      "GitHub",
+      "Git",
+      "Mongose",
+      "Prisma",
+      "Firebase"
+    ],
+    "libraries": [
+      "Shadcn",
+      "Tailwindcss",
+      "Bootstrap",
+      "Tanstack Query(formarly react query)",
+      "Axios",
+      "API integrations",
+      "Redux",
+      "Zustand",
+      "Zod",
+      "Formik",
+      "React hook form",
+      "React router",
+      "Motion(formarly framer motion)"
+    ],
+    "others": [
+      "Wordpress",
+      "Salla Themes"
+    ]
+  },
+  "contact": {
+    "title": "لنتعاون معاً"
+  },
+  "clients": {
+    "title": "موثوق من قبل",
+    "logos": [
+      "/clients/00001client.webp",
+      "/clients/00002client.webp",
+      "/clients/00003client.webp",
+      "/clients/00004client.webp",
+      "/clients/00005client.webp",
+      "/clients/00006client.webp",
+      "/clients/00007client.webp",
+      "/clients/00008client.webp",
+      "/clients/00009client.webp",
+      "/clients/00010client.webp",
+      "/clients/00011client.webp",
+      "/clients/00012client.webp"
+    ]
+  },
+  "titles": {
+    "experiences": "الخبرات",
+    "brief": "نبذة",
+    "services": "الخدمات",
+    "skills": "المهارات",
+    "contact": "جاهز لتجربة جديدة؟",
+    "wordspace": "المشاريع البرمجية"
+  },
+  "buttons_and_links": {
+    "open": "تصفح المصدر",
+    "demo": "تجربة"
+  }
+}

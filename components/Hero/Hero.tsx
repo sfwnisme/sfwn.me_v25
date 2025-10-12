@@ -3,10 +3,20 @@ import React from "react";
 import Styles from "./Hero.module.css";
 import { motion } from "motion/react";
 import Image from "next/image";
+import { useDictionary } from "@/context/DictionaryProvider";
+import Button from "../Button/Button";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const Hero = () => {
+  const lang = usePathname().split(",")[0]
+  console.log("pathname", lang)
+  const dict = useDictionary()
+  const { first_name, second_name, job_title } = dict.user
+
+  const isAr = lang === "/ar"
   const nameVariants = {
-    hidden: { opacity: 0, x: 500, scale: 1 },
+    hidden: { opacity: 0, x: isAr? -500 :500, scale: 1 },
     visible: {
       opacity: 1,
       transition: { duration: 0.7, ease: "easeOut" },
@@ -20,20 +30,27 @@ export const Hero = () => {
   };
 
   const imageVariants = {
-    hidden: { opacity: 0, scale: 0.2, x: "-100%" },
+    hidden: { opacity: 0, scale: 0.2, x: isAr?"100%":"-100%" },
     visible: {
       opacity: [0.5, 0.8, 1],
-      // filter: "grayscale(1)",
       scale: [1, 1],
-      x: [-500, 0],
+      x: isAr? [500, 0]:[-500, 0],
       transition: { duration: 1 },
     },
   };
 
   return (
-    <div className={Styles.hero}>
-      {/* <SectionWrapper> */}
-        {/* <figure> */}
+    <div>
+      {/* <div className={Styles.hero__control_buttons}>
+        <Link
+          href={lang === "/ar" ? "/en" : "/ar"}
+        >
+          <Button icon="invisible">
+            {lang === "/ar" ? "EN" : "العربية"}
+          </Button>
+        </Link>
+      </div> */}
+      <div className={Styles.hero}>
         <motion.figure
           className={Styles.hero__figure}
           variants={imageVariants}
@@ -48,7 +65,6 @@ export const Hero = () => {
             height={2000}
           />
         </motion.figure>
-        {/* </figure> */}
         <div className={Styles.hero__content}>
           <motion.h2
             className={Styles.hero__title}
@@ -56,7 +72,7 @@ export const Hero = () => {
             initial="hidden"
             animate="visible"
           >
-            Frontend Developer
+            {job_title}
           </motion.h2>
           <motion.h1
             className={`${Styles.hero__name}`}
@@ -64,10 +80,10 @@ export const Hero = () => {
             animate="visible"
             variants={nameVariants}
           >
-            Safwan Mohamed
+            {first_name} {second_name}
           </motion.h1>
         </div>
-      {/* </SectionWrapper> */}
+      </div>
     </div>
   );
 };

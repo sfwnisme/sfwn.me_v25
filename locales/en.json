@@ -1,0 +1,139 @@
+{
+  "user": {
+    "first_name": "Safwan",
+    "second_name": "Mohamed",
+    "job_title": "Frontend Developer",
+    "brief": "Hi there! I'm Safwan Mohamed, a Frontend Developer residing in Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences. I thrive on pushing the boundaries of frontend, By staying attuned to the ever-evolving landscape of trends and technologies."
+  },
+  "experience": [
+    {
+      "title": "Web Developer & Technical Marketing",
+      "employer": "Self Employed",
+      "period": "2021 - Now",
+      "nested": [
+        {
+          "title": "Frontend Developer",
+          "period": "2023 - Now"
+        },
+        {
+          "title": "Wordpress Developer",
+          "period": "2024 - Now"
+        },
+        {
+          "title": "Technical Marketing Specialist",
+          "period": "2021 - Now"
+        }
+      ]
+    },
+    {
+      "title": "Marketing Manager",
+      "employer": "Makzanelc",
+      "period": "Mar 2024 - Sep 2025",
+      "type": "full-time"
+    },
+    {
+      "title": "Marketing Specialist",
+      "employer": "Technogas",
+      "period": "Jul 2024 - Nov 2024",
+      "type": "part-time"
+    },
+    {
+      "title": "Operation Specialist",
+      "employer": "Planandresults",
+      "period": "Feb 2023 - Mar 2024",
+      "type": "full-time"
+    },
+    {
+      "title": "Marketing Specialist",
+      "employer": "Elbity",
+      "period": "Aug 2021- Feb 2023",
+      "type": "full-time"
+    },
+    {
+      "title": "Online Store Owner",
+      "employer": "Yemen Drop",
+      "period": "Mar 2019 - Feb 2022",
+      "type": "full-time"
+    }
+  ],
+  "services": [
+    "Web development",
+    "Wordpress development",
+    "Technical marketing",
+    "Operation managment"
+  ],
+  "skills": {
+    "main": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript"
+    ],
+    "frameworks": [
+      "Nodejs",
+      "Reactjs",
+      "Nextjs",
+      "Expressjs",
+      "MongoDB"
+    ],
+    "tools": [
+      "Docker",
+      "GitHub",
+      "Git",
+      "Mongose",
+      "Prisma",
+      "Firebase"
+    ],
+    "libraries": [
+      "Shadcn",
+      "Tailwindcss",
+      "Bootstrap",
+      "Tanstack Query(formarly react query)",
+      "Axios",
+      "API integrations",
+      "Redux",
+      "Zustand",
+      "Zod",
+      "Formik",
+      "React hook form",
+      "React router",
+      "Motion(formarly framer motion)"
+    ],
+    "others": [
+      "Wordpress",
+      "Salla Themes"
+    ]
+  },
+  "contact": {
+    "title": "Let's Collaborate"
+  },
+  "clients": {
+    "title": "Trusted By",
+    "logos": [
+      "/clients/00001client.webp",
+      "/clients/00002client.webp",
+      "/clients/00003client.webp",
+      "/clients/00004client.webp",
+      "/clients/00005client.webp",
+      "/clients/00006client.webp",
+      "/clients/00007client.webp",
+      "/clients/00008client.webp",
+      "/clients/00009client.webp",
+      "/clients/00010client.webp",
+      "/clients/00011client.webp",
+      "/clients/00012client.webp"
+    ]
+  },
+  "titles": {
+    "experiences": "Experience",
+    "brief": "Brief",
+    "services": "Services",
+    "skills": "Skills",
+    "contact": "Ready To Make Wavies?",
+    "wordspace": "Workspace"
+  },
+  "buttons_and_links": {
+    "open": "Open repo",
+    "demo": "Demo"
+  }
+}

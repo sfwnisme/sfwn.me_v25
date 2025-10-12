@@ -61,7 +61,7 @@
   font-size: var(--font-body);
   line-height: var(--font-body-line-height);
   font-weight: 500;
-  color: var(--color-light-gray);
+  color: var(--color-gray);
   display: inline-flex;
   align-items: center;
   gap: 3px;
