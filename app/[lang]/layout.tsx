@@ -16,7 +16,7 @@ const interTight = Inter_Tight({
 const notoKufi = Noto_Kufi_Arabic({
   subsets: ["arabic"],
   display: "swap",
-  weight: ["100","200","300","400","500","600","700"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
   variable: "--font-main"
 })
 
@@ -30,14 +30,14 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: { lang: "en" | "ar" }
+  params: Promise<{ lang: "en" | "ar" }>
 }>) {
-
-  const dict = await getDictionary(params.lang)
+  const {lang} = await params
+  const dict = await getDictionary(lang)
 
   return (
-    <html lang={params.lang === "en"? "en":"ar"} dir={params.lang === "en"? "ltr": "rtl"}>
-      <body className={`${params.lang === "en" ?interTight.className : notoKufi.className} ${Styles.layout}`}>
+    <html lang={lang === "en" ? "en" : "ar"} dir={lang === "en" ? "ltr" : "rtl"}>
+      <body className={`${lang === "en" ? interTight.className : notoKufi.className} ${Styles.layout}`}>
         <DictionaryProvider dictionary={dict}>
           {children}
         </DictionaryProvider>

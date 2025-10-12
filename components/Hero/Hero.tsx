@@ -4,8 +4,6 @@ import Styles from "./Hero.module.css";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { useDictionary } from "@/context/DictionaryProvider";
-import Button from "../Button/Button";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 export const Hero = () => {

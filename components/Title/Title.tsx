@@ -2,13 +2,11 @@
 import React from 'react'
 import Styles from './Title.module.css'
 import { motion } from 'motion/react'
-import { usePathname } from 'next/navigation'
 type Props = {
   children: React.ReactNode;
 }
 
 export default function Title({ children }: Props) {
-  // const currentLang = usePathname().split(",")[0]
   const titleVariants = {
     initial: {
       y: '100%',
