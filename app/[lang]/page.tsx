@@ -7,14 +7,18 @@ import Workspace from "@/components/workspace/Workspace"
 import Styles from './page.module.css'
 import Clients from "@/components/Clients/Clients"
 
+export async function generateStaticparams() {
+  return [{ lang: "en" }, { lang: "ar" }]
+}
+
 const page = async ({ params }: { params: Promise<{ lang: "en" | "ar" }> }) => {
-  const {lang} = await params
+  const { lang } = await params
   return (
     <div className={Styles['main-content']}>
       <Hero />
       <About />
       <SkillsAndServices />
-      <Workspace lang={lang}/>
+      <Workspace lang={lang} />
       <Clients />
       <Contact />
       <Footer />
