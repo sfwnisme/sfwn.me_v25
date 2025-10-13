@@ -7,7 +7,6 @@ import Image from 'next/image'
 
 export default function Clients() {
   const { clients } = useDictionary()
-  console.log("oooooooooooooo", clients)
   const renderClients = clients.logos.map((client: string) => (
     <li key={client} className={Styles.client__item}><Image src={client} alt="" className={Styles.client__img} height={500} width={500} /></li>
 

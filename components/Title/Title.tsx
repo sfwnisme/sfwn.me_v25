@@ -44,7 +44,6 @@ export default function Title({ children }: Props) {
         variants={arrowVariants}
         initial="initial"
         animate="animate"
-        // hidden
       />
       <motion.h1
         className={Styles.title}

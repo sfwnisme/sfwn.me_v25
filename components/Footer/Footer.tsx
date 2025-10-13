@@ -8,17 +8,12 @@ import Link from 'next/link'
 export default function Footer() {
   const currentYear = new Date().getFullYear()
   const [themeIcon, setThemeIcon] = useState("")
-  console.log("q", themeIcon)
 
   const lang = usePathname().split(",")[0]
-  console.log("pathname", lang)
 
-  // const 
-  // Add a function to toggle a CSS class on the body when the theme button is clicked
   const handleThemeToggle = () => {
     if (typeof document !== 'undefined') {
       document.body.classList.toggle('light');
-      // Save the class to localStorage
       if (document.body.classList.contains('light')) {
         localStorage.setItem('theme', 'light');
         setThemeIcon("light")
@@ -38,7 +33,6 @@ export default function Footer() {
       setThemeIcon("dark")
     }
   }, [])
-  console.log("q2", themeIcon)
 
   return (
     <footer className={Styles.footer}>
@@ -56,9 +50,7 @@ export default function Footer() {
             href={lang === "/ar" ? "/en" : "/ar"}
             className={Styles.footer__lang_button}
           >
-            {/* <button> */}
               {lang === "/ar" ? "EN" : "ع"}
-            {/* </button> */}
           </Link>
         </li>
       </ul>

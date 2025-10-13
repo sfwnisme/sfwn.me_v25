@@ -3,7 +3,6 @@ import React from 'react'
 import Styles from './Contact.module.css'
 import Title from '../Title/Title'
 import { useDictionary } from '@/context/DictionaryProvider'
-// import LinkButton from '../Link/LinkButton'
 
 export default function Contact() {
   const {titles, contact} = useDictionary()

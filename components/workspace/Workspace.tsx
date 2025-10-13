@@ -6,7 +6,6 @@ import Title from '../Title/Title'
 import { getDictionary } from '@/app/[lang]/dictionaries'
 
 export default async function Workspace({lang}: {lang: "en" | "ar"}) {
-  // const {workspace, titles} = lan
   const title = (await getDictionary(lang)).titles.wordspace
   const visiRepo = await getRepo('visi')
   const complaintTicketsRepo = await getRepo('COMPLAINT-TICKETS')

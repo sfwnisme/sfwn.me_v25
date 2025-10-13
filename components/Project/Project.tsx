@@ -41,23 +41,9 @@ export default function Project({ id = 0, title = 'project title', image = '', h
     }
   }
 
-  // const projectVariants = {
-  //   offscreen: {
-  //     opacity: 0.1,
-  //   },
-  //   onscreen: {
-  //     opacity: 1,
-  //   }
-  // }
-
   return (
     <motion.div
-      // initial='offscreen'
-      // whileInView='onscreen'
-      // variants={projectVariants}
-      // viewport={{amount: 'some' }}
       initial="offscreen"
-      // whileHover='hover'
       whileInView='onscreen'
       variants={imgVariants}
       viewport={{ amount: 'some' }}
@@ -71,7 +57,6 @@ export default function Project({ id = 0, title = 'project title', image = '', h
         </figure>
         <div className={Styles.project__content}>
           <PointTitle title={title} id={id} />
-          {/* <p className={Styles.project__period}>{period}</p> */}
         </div>
       </Link>
     </motion.div>

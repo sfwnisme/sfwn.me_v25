@@ -16,7 +16,6 @@ export default function LinkButton({ children = "link", href = "https://sfwn.me"
   return (
     <Link href={href} className={`${Style.link} ${variants[variant]}`}>
       <span className={Style.text}>{children}</span>
-      {/* <img src="./arrow-icon-orange.svg" alt="" className={Style.arrow} /> */}
     </Link>
   )
 }

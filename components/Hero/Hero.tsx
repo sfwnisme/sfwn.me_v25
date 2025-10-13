@@ -8,7 +8,6 @@ import { usePathname } from "next/navigation";
 
 export const Hero = () => {
   const lang = usePathname().split(",")[0]
-  console.log("pathname", lang)
   const dict = useDictionary()
   const { first_name, second_name, job_title } = dict.user
 
@@ -39,15 +38,6 @@ export const Hero = () => {
 
   return (
     <div>
-      {/* <div className={Styles.hero__control_buttons}>
-        <Link
-          href={lang === "/ar" ? "/en" : "/ar"}
-        >
-          <Button icon="invisible">
-            {lang === "/ar" ? "EN" : "العربية"}
-          </Button>
-        </Link>
-      </div> */}
       <div className={Styles.hero}>
         <motion.figure
           className={Styles.hero__figure}

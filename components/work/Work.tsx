@@ -40,7 +40,6 @@ const titleVariant = {
 export default function Work({ repo }: Readonly<Props>) {
 
   const {buttons_and_links}= useDictionary()
-  console.log("//////////////////",buttons_and_links)
   return (
     <div className={Style.work}>
       <motion.div

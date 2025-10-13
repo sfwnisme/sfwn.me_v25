@@ -36,7 +36,7 @@ export default async function RootLayout({
   const dict = await getDictionary(lang)
 
   return (
-    <html lang={lang === "en" ? "en" : "ar"} dir={lang === "en" ? "ltr" : "rtl"}>
+    <html lang={lang} dir={lang === "en" ? "ltr" : "rtl"}>
       <body className={`${lang === "en" ? interTight.className : notoKufi.className} ${Styles.layout}`}>
         <DictionaryProvider dictionary={dict}>
           {children}

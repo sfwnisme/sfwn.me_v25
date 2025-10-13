@@ -4,15 +4,8 @@ import Styles from './SkillsAndServices.module.css'
 import SectionWrapper from '../SectionWrapper/SectionWrapper'
 import Title from '../Title/Title'
 import PointTitle from '../PointTitle/PointTitle'
-
 import { motion } from 'motion/react'
 import { useDictionary } from '@/context/DictionaryProvider'
-
-// const skillsArray = [
-//   { id: 1, title: "HTML, CSS, JS, TS" },
-//   { id: 2, title: "Nodejs, React, Next.js, Expressjs, MongoDB" },
-//   { id: 7, title: "Git, GitHub, Mongoose, Prisma" },
-// ]
 
 export const SkillsAndServices = () => {
   const { services, skills, titles } = useDictionary()
@@ -26,26 +19,10 @@ export const SkillsAndServices = () => {
       opacity: 1,
       rotate: 0,
       transition: {
-        // type: "spring",
         duration: 0.3,
       },
     })),
   }
-  // const sectionVariants = {
-  //   offscreen: {
-  //     y: 100,
-  //     opacity: 0,
-  //   },
-  //   onscreen: ((custom: number = 1) => ({
-  //     y: 0,
-  //     opacity: 1,
-  //     rotate: 0,
-  //     transition: {
-  //       // type: "spring",
-  //       duration: 0.3 * custom,
-  //     },
-  //   })),
-  // }
 
   const titleVariant = {
     offscreen: {
@@ -99,7 +76,6 @@ export const SkillsAndServices = () => {
         <ul className={Styles.skills__list} >
           <li className={Styles['skill__item']}>
             <motion.div
-              // custom={++idx}
               initial="offscreen"
               whileInView="onscreen"
               variants={titleVariant}
@@ -110,7 +86,6 @@ export const SkillsAndServices = () => {
           </li>
           <li className={Styles['skill__item']}>
             <motion.div
-              // custom={++idx}
               initial="offscreen"
               whileInView="onscreen"
               variants={titleVariant}
@@ -121,7 +96,6 @@ export const SkillsAndServices = () => {
           </li>
           <li className={Styles['skill__item']}>
             <motion.div
-              // custom={++idx}
               initial="offscreen"
               whileInView="onscreen"
               variants={titleVariant}
@@ -132,7 +106,6 @@ export const SkillsAndServices = () => {
           </li>
           <li className={Styles['skill__item']}>
             <motion.div
-              // custom={++idx}
               initial="offscreen"
               whileInView="onscreen"
               variants={titleVariant}
@@ -143,7 +116,6 @@ export const SkillsAndServices = () => {
           </li>
           <li className={Styles['skill__item']}>
             <motion.div
-              // custom={++idx}
               initial="offscreen"
               whileInView="onscreen"
               variants={titleVariant}
