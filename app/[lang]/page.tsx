@@ -7,7 +7,7 @@ import Workspace from "@/components/workspace/Workspace"
 import Styles from './page.module.css'
 import Clients from "@/components/Clients/Clients"
 
-export async function generateStaticparams() {
+export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "ar" }]
 }
 
