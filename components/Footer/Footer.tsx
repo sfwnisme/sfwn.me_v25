@@ -50,7 +50,7 @@ export default function Footer() {
             href={lang === "/ar" ? "/en" : "/ar"}
             className={Styles.footer__lang_button}
           >
-              {lang === "/ar" ? "EN" : "ع"}
+              {lang === "/ar" ? "EN" : "عربي"}
           </Link>
         </li>
       </ul>

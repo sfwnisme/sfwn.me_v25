@@ -64,3 +64,9 @@
     padding: 8px;
   }
 }
+:lang(ar) .footer__lang_button {
+  font-family: var(--inter-tight-font-family) !important;
+}
+:lang(en) .footer__lang_button {
+  font-family: var(--noto-kufi-font-family) !important;
+}
