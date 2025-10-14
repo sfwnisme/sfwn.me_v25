@@ -10,14 +10,14 @@ const interTight = Inter_Tight({
   subsets: ["latin"],
   display: "swap",
   weight: ["400"],
-  variable: "--font-main",
+  variable: "--inter-tight-font-family",
 });
 
 const notoKufi = Noto_Kufi_Arabic({
   subsets: ["arabic"],
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700"],
-  variable: "--font-main"
+  variable: "--noto-kufi-font-family"
 })
 
 export const metadata: Metadata = {
@@ -41,7 +41,11 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} dir={lang === "en" ? "ltr" : "rtl"}>
-      <body className={`${lang === "en" ? interTight.className : notoKufi.className} ${Styles.layout}`}>
+      <body className={`
+        ${lang === "en" ? interTight.className : notoKufi.className}
+        ${interTight.variable} ${notoKufi.variable}
+         ${Styles.layout}
+         `}>
         <DictionaryProvider dictionary={dict}>
           {children}
         </DictionaryProvider>
