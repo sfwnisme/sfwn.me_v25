@@ -13,8 +13,8 @@ export const Hero = () => {
   const { first_name, second_name, job_title } = dict.user
 
   const isAr = lang === "/ar"
-  const nameVariants = {
-    hidden: { opacity: 0, x: isAr ? -500 : 500, scale: 1 },
+
+  const nameVariantsVisible = {
     visible: {
       opacity: 1,
       transition: { duration: 0.7, ease: "easeOut" },
@@ -22,17 +22,22 @@ export const Hero = () => {
       scale: 1,
     },
   };
-  const titleVariants = {
-    hidden: { opacity: 0, y: -100 },
+  const nameVariantsHidden = {
+    hidden: { opacity: 0, x: isAr ? -500 : 500, scale: 1 },
+  }
+  const titleVariantsVisible = {
     visible: { opacity: 1, transition: { duration: 0.5 }, y: 0 },
   };
+  const titleVariantsHidden = {
+    hidden: { opacity: 0, y: -100 },
+  }
 
   const imageVariantsVisible = {
     visible: {
       opacity: [0.5, 0.8, 1],
       scale: [1, 1],
       x: isAr ? [500, 0] : [-500, 0],
-      transition: { duration: 1 },
+      transition: { duration: 0.5 },
     },
   };
   const imageVariantsHidden = { hidden: { opacity: 0, scale: 0.2, x: isAr ? "100%" : "-100%" }, }
@@ -58,7 +63,7 @@ export const Hero = () => {
         <div className={Styles.hero__content}>
           <motion.h2
             className={Styles.hero__title}
-            variants={titleVariants}
+            variants={isImageLoaded ? titleVariantsVisible : titleVariantsHidden}
             initial="hidden"
             animate="visible"
           >
@@ -68,7 +73,7 @@ export const Hero = () => {
             className={`${Styles.hero__name}`}
             initial="hidden"
             animate="visible"
-            variants={nameVariants}
+            variants={isImageLoaded ? nameVariantsVisible : nameVariantsHidden}
           >
             {first_name} {second_name}
           </motion.h1>
