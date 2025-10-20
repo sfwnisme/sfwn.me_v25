@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/dashboard",
     },
-    sitemap: "https://sfwn.me/sitemap.xml"
-  }
+    sitemap: "https://sfwn.me/sitemap.xml",
+  };
 }
