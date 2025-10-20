@@ -40,6 +40,7 @@
   position: fixed;
   top: 1rem;
   inset-inline-end: 1rem;
+  /* box-shadow: 4px 4px var(--color-border); */
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
   }
@@ -68,5 +69,5 @@
   font-family: var(--inter-tight-font-family) !important;
 }
 :lang(en) .footer__lang_button {
-  font-family: var(--noto-kufi-font-family) !important;
+  font-family: var(--aref-ruqaa-font-family) !important;
 }
