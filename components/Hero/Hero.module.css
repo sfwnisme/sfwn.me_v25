@@ -60,9 +60,9 @@
   color: var(--color-light-gray);
   max-width: 500px;
 }
-:lang(ar) .hero__name {
+/* :lang(ar) .hero__name {
   font-family: var(--aref-ruqaa-font-family);
-}
+} */
 
 /* @media screen and (max-width: 768px) {
   .hero__name {
