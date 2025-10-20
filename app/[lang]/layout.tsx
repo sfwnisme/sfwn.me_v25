@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter_Tight, Noto_Kufi_Arabic } from "next/font/google";
+import { Aref_Ruqaa, Inter_Tight, Noto_Kufi_Arabic } from "next/font/google";
 import "../globals.css";
 import Styles from "./layout.module.css";
 import { DictionaryProvider } from "@/context/DictionaryProvider";
@@ -18,6 +18,12 @@ const notoKufi = Noto_Kufi_Arabic({
   display: "swap",
   weight: ["100", "200", "300", "400", "500", "600", "700"],
   variable: "--noto-kufi-font-family"
+})
+const arefRuqaa = Aref_Ruqaa({
+  subsets: ["arabic"],
+  display: "swap",
+  weight: ["400", "700"],
+  variable: "--aref-ruqaa-font-family"
 })
 
 export const metadata: Metadata = {
@@ -43,7 +49,7 @@ export default async function RootLayout({
     <html lang={lang} dir={lang === "en" ? "ltr" : "rtl"}>
       <body className={`
         ${lang === "en" ? interTight.className : notoKufi.className}
-        ${interTight.variable} ${notoKufi.variable}
+        ${interTight.variable} ${notoKufi.variable} ${arefRuqaa.variable}
          ${Styles.layout}
          `}>
         <DictionaryProvider dictionary={dict}>
