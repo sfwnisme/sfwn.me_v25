@@ -43,15 +43,16 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: "en" | "ar" }>
+  params: Promise<{ lang: string }>
 }>) {
   const { lang } = await params
-  const dict = await getDictionary(lang)
+  const validLang = lang === "en" || lang === "ar" ? lang : "en"
+  const dict = await getDictionary(validLang)
 
   return (
-    <html lang={lang} dir={lang === "en" ? "ltr" : "rtl"}>
+    <html lang={validLang} dir={validLang === "en" ? "ltr" : "rtl"}>
       <body className={`
-        ${lang === "en" ? interTight.className : notoKufi.className}
+        ${validLang === "en" ? interTight.className : notoKufi.className}
         ${interTight.variable} ${notoKufi.variable} ${arefRuqaa.variable}
          ${Styles.layout}
          `}>

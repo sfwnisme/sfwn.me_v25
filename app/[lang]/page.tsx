@@ -11,14 +11,15 @@ export async function generateStaticParams() {
   return [{ lang: "en" }, { lang: "ar" }]
 }
 
-const page = async ({ params }: { params: Promise<{ lang: "en" | "ar" }> }) => {
+const page = async ({ params }: { params: Promise<{ lang: string }> }) => {
   const { lang } = await params
+  const validLang = lang === "en" || lang === "ar" ? lang : "en"
   return (
     <div className={Styles['main-content']}>
       <Hero />
       <About />
       <SkillsAndServices />
-      <Workspace lang={lang} />
+      <Workspace lang={validLang} />
       <Clients />
       <Contact />
       <Footer />
