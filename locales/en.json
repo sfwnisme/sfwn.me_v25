@@ -2,8 +2,8 @@
   "user": {
     "first_name": "Safwan",
     "second_name": "Mohamed",
-    "job_title": "Frontend Developer",
-    "brief": "Hi there! I'm Safwan Mohamed, a Frontend Developer residing in Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences. I thrive on pushing the boundaries of frontend, By staying attuned to the ever-evolving landscape of trends and technologies."
+    "job_title": "Frontend Engineer",
+    "brief": "Hi there! I'm Safwan Mohamed, a Frontend Engineer residing in Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences. I thrive on pushing the boundaries of frontend, By staying attuned to the ever-evolving landscape of trends and technologies."
   },
   "experience": [
     {
@@ -12,7 +12,7 @@
       "period": "2021 - Now",
       "nested": [
         {
-          "title": "Frontend Developer",
+          "title": "Frontend Engineer",
           "period": "2023 - Now"
         },
         {
