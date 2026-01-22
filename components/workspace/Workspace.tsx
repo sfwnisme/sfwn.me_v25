@@ -13,11 +13,15 @@ export default async function Workspace({lang}: {lang: "en" | "ar"}) {
   const luberefDotComCloneRepo = await getRepo('luberef.com-clone')
   const schoolManagementSystemeRepo = await getRepo('school-management-system')
   const eCommerceRepo = await getRepo('e-commerce')
+  const frontendRealEstateRepo = await getRepo('frontend-real-estate')
+  const backendRealEstateRepo = await getRepo('backend-real-estate')
   return (
     <div className={Style.workspace}>
       <Title>{title}</Title>
       <div className={Style['workspace__works']}>
         <Work repo={visiRepo} />
+        <Work repo={frontendRealEstateRepo} />
+        <Work repo={backendRealEstateRepo} />
         <Work repo={complaintTicketsRepo} />
         <Work repo={backendTicketSystemRepo} />
         <Work repo={luberefDotComCloneRepo} />
