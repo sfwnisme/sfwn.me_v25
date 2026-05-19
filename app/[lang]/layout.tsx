@@ -16,14 +16,16 @@ const interTight = Inter_Tight({
 const notoKufi = Noto_Kufi_Arabic({
   subsets: ["arabic"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
-  variable: "--noto-kufi-font-family"
+  weight: ["400", "700"],
+  variable: "--noto-kufi-font-family",
+  preload: false,
 })
 const arefRuqaa = Aref_Ruqaa({
   subsets: ["arabic"],
   display: "swap",
   weight: ["400", "700"],
-  variable: "--aref-ruqaa-font-family"
+  variable: "--aref-ruqaa-font-family",
+  preload: false,
 })
 
 export const metadata: Metadata = {
@@ -51,6 +53,13 @@ export default async function RootLayout({
 
   return (
     <html lang={validLang} dir={validLang === "en" ? "ltr" : "rtl"}>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{if(localStorage.getItem('theme')==='light'){document.documentElement.classList.add('light');}}catch(e){}})();`,
+          }}
+        />
+      </head>
       <body className={`
         ${validLang === "en" ? interTight.className : notoKufi.className}
         ${interTight.variable} ${notoKufi.variable} ${arefRuqaa.variable}

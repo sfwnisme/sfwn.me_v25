@@ -13,8 +13,8 @@ export default function Footer() {
 
   const handleThemeToggle = () => {
     if (typeof document !== 'undefined') {
-      document.body.classList.toggle('light');
-      if (document.body.classList.contains('light')) {
+      document.documentElement.classList.toggle('light');
+      if (document.documentElement.classList.contains('light')) {
         localStorage.setItem('theme', 'light');
         setThemeIcon("light")
       } else {
@@ -26,10 +26,10 @@ export default function Footer() {
 
   useLayoutEffect(() => {
     if (localStorage.getItem("theme") === 'light') {
-      document.body.classList.add("light")
+      document.documentElement.classList.add("light")
       setThemeIcon("light")
     } else {
-      document.body.classList.remove("dark")
+      document.documentElement.classList.remove("dark")
       setThemeIcon("dark")
     }
   }, [])

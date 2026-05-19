@@ -2,6 +2,7 @@
 import React from 'react'
 import Styles from './Project.module.css'
 import Link from 'next/link';
+import Image from 'next/image';
 import PointTitle from '../PointTitle/PointTitle';
 import { motion } from 'motion/react'
 
@@ -51,8 +52,15 @@ export default function Project({ id = 0, title = 'project title', image = '', h
       <Link href={href} className={Styles.project} id={id.toString()}
       >
         <figure className={Styles.project__figure}>
-          <motion.img
-            src={image} alt="" className={Styles.project__image}
+          <Image
+            src={image}
+            alt={title}
+            className={Styles.project__image}
+            width={800}
+            height={800}
+            sizes="(max-width: 767px) 100vw, 50vw"
+            loading="lazy"
+            unoptimized={image.endsWith('.gif')}
           />
         </figure>
         <div className={Styles.project__content}>

@@ -57,6 +57,8 @@ export const Hero = () => {
             className={Styles.hero__image}
             width={2000}
             height={2000}
+            priority
+            sizes="(max-width: 767px) 80vw, 40vw"
             onLoad={() => setIsImageLoaded(true)}
           />
         </motion.figure>

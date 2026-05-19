@@ -1,7 +1,6 @@
 'use client'
 import Style from './Work.module.css'
 import { Book, FolderGit, GitCommit, GitCommitVertical, Star } from 'lucide-react'
-import React from 'react'
 import LinkButton from '../Link/LinkButton';
 import { formatedDate } from '@/utils/utils';
 import { motion } from 'motion/react'

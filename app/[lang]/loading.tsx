@@ -1,10 +1,9 @@
-import React from 'react'
 import Style from './loading.module.css'
 
-export default function loading() {
+export default function Loading() {
   return (
-    <div className={Style.loading}>
-      <h1 className={Style.loading__text}>........</h1>
+    <div className={Style.loading} role="status" aria-label="Loading">
+      <div className={Style.bar} />
     </div>
   )
 }

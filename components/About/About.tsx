@@ -49,7 +49,7 @@ export default function About() {
     type?: string,
   }
   const renderExperiences = experience.map((experience: Experience, idx: number) => (
-    <li key={experience.period} className={Styles.experiences__item}>
+    <li key={experience.period+experience.employer} className={Styles.experiences__item}>
       <motion.div
         variants={titleVariant}
         initial="initial"

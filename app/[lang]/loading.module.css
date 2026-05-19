@@ -1,14 +1,88 @@
 .loading {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  background-color: var(--color-black) !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: fixed;
+    inset: 0;
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*gap: 12px;*/
+    z-index: 9999;
 }
-.loading__text {
-  color: var(--color-orange);
-  font-weight: 100;
-  text-align: center;
+
+.mark {
+    font-size: 48px;
+    letter-spacing: 0.04em;
+    font-weight: 300;
+    color: var(--color-orange);
+    display: inline-flex;
+    align-items: baseline;
+    gap: 2px;
+    line-height: 1;
+    /*animation: pulse 1.6s ease-in-out infinite;*/
+}
+
+.mark__dot {
+    width: 6px;
+    height: 6px;
+    background: var(--color-orange);
+    border-radius: 50%;
+    margin-inline-start: 4px;
+    align-self: end;
+    margin-bottom: 10px;
+    animation: dot-pulse 1.6s ease-in-out infinite;
+}
+
+.bar {
+    position: relative;
+    max-width: 200px;
+    width: 100%;
+    padding-inline:2rem;
+    height: 30px;
+    overflow: hidden;
+    border-radius: 2px;
+    border: 1px dashed var(--color-gray);
+    transform: skew(30deg);
+    
+}
+
+.bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 50%;
+    background: var(--color-orange);
+    border-radius: 2px;
+    animation: slide 0.5s ease-in-out infinite;
+}
+
+.bar:dir(rtl)::after {
+    animation-direction: reverse;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        opacity: 0.7;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes dot-pulse {
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0% { transform: translateX(-250%); }
+    100% { transform: translateX(350%); }
 }

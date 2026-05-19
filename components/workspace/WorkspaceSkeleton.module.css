@@ -1,0 +1,70 @@
+.skeleton__card {
+  padding: 24px;
+}
+
+@media (max-width: 767px) {
+  .skeleton__card {
+    padding: 0;
+  }
+}
+
+.skeleton__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.skeleton__icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+}
+
+.skeleton__title {
+  height: 22px;
+  width: 45%;
+  max-width: 240px;
+  border-radius: 4px;
+}
+
+.skeleton__line {
+  height: 14px;
+  border-radius: 4px;
+  margin-block: 8px;
+}
+
+.skeleton__line--full { width: 100%; }
+.skeleton__line--75 { width: 75%; }
+
+.skeleton__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  row-gap: 10px;
+  margin-top: 14px;
+}
+
+.skeleton__chip {
+  height: 14px;
+  width: 64px;
+  border-radius: 4px;
+}
+
+.skeleton__chip--wide { width: 96px; }
+
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0.10) 50%,
+    rgba(255, 255, 255, 0.04) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

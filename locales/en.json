@@ -3,9 +3,15 @@
     "first_name": "Safwan",
     "second_name": "Mohamed",
     "job_title": "Frontend Engineer",
-    "brief": "Hi there! I'm Safwan Mohamed, a Frontend Engineer residing in Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences. I thrive on pushing the boundaries of frontend, By staying attuned to the ever-evolving landscape of trends and technologies."
+    "brief": "Hi there! I'm Safwan Mohamed, a \"Frontend Engineer\" residing in Jeddah, KSA. Fueled by a passion for crafting captivating digital experiences. I thrive on pushing the boundaries of frontend, By staying attuned to the ever-evolving landscape of trends and technologies."
   },
   "experience": [
+    {
+      "title": "Frontend Engineer",
+      "employer": "Oumla",
+      "period": "May 2026 - Now",
+      "type": "full-time"
+    },
     {
       "title": "Web Developer & Technical Marketing",
       "employer": "Self Employed",
@@ -110,6 +116,7 @@
   "clients": {
     "title": "Trusted By",
     "logos": [
+      "/clients/00000client.webp",
       "/clients/00001client.webp",
       "/clients/00002client.webp",
       "/clients/00003client.webp",
